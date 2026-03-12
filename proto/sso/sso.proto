@@ -14,7 +14,7 @@ service Auth {
 
 
 message RegisterRequest {
-  string login = 1; // Login of the user to register.
+  string username = 1; // Login of the user to register.
   string email = 2; // Email of the user to register.
   string password = 3; // Password of the user to register.
 }
@@ -24,7 +24,7 @@ message RegisterResponse {
 }
 
 message LoginRequest {
-  string login = 1; // Login of the user to login.
+  string username = 1; // Login of the user to login.
   string email = 2; // Email of the user to alternative login.
   string password = 3; // Password of the user to login.
   int32 app_id = 4; // ID of the app to login to.
